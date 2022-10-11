@@ -1,13 +1,20 @@
 // Grab all payBtns
 const payBtns = document.getElementsByClassName("btn");
+const customerNameInput = document.querySelector(".c-details_name");
+const customerEmailInput = document.querySelector(".c-details_email");
 
 // Attach a click event listener to every payButton
 for(let i = 0; i < payBtns.length; i++) {
     payBtns[i].addEventListener("click", (event) => {
         event.preventDefault()
-        let price = String(payBtns[i].getAttribute("data-price"));
 
-        payWithLazarpay("Joshua Omobola", "cookiesofneon@gmail.com", price)
+        let customerName = customerNameInput.value;
+        let customerEmail = customerEmailInput.value;
+
+        console.log(customerEmail, customerName)
+
+        let price = String(payBtns[i].getAttribute("data-price"));
+        payWithLazarpay(customerName, customerEmail, price)
     })
 }
 
