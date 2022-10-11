@@ -1,14 +1,17 @@
 const payBtns = document.getElementsByClassName("btn");
 
+// Attach an event listener to every payButton
 for(let i = 0; i < payBtns.length; i++) {
     payBtns[i].addEventListener("click", (event) => {
         event.preventDefault()
-        console.log(Number(payBtns[i].getAttribute("data-price")))
-        payWithLazarpay("You", "12")
+        let price = payBtns[i].getAttribute("data-price")
+
+        payWithLazarpay("Joshua Omobola", price)
     })
 }
 
 
+// Handler: Invokes the LazerCheckout function
 function payWithLazarpay(name, price) {
     LazerCheckout({
         name: name,
