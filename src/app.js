@@ -1,21 +1,23 @@
+// Grab all payBtns
 const payBtns = document.getElementsByClassName("btn");
 
-// Attach an event listener to every payButton
+// Attach a click event listener to every payButton
 for(let i = 0; i < payBtns.length; i++) {
     payBtns[i].addEventListener("click", (event) => {
         event.preventDefault()
-        let price = payBtns[i].getAttribute("data-price")
+        let price = String(payBtns[i].getAttribute("data-price"));
 
-        payWithLazarpay("Joshua Omobola", price)
+        payWithLazarpay("Joshua Omobola", "cookiesofneon@gmail.com", price)
     })
 }
 
 
 // Handler: Invokes the LazerCheckout function
-function payWithLazarpay(name, price) {
+// `LazerCheckout` is provided from the CDN
+function payWithLazarpay(name, email, price) {
     LazerCheckout({
         name: name,
-        email: "",
+        email: email,
         amount: price,
         key: "pk_live_zEqWsc6vq4a4AoOxMtEtNFlMSttUBWpeINOzw9icyV9r9VAjrm",
         currency: "USD",
