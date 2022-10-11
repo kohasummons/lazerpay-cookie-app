@@ -105,6 +105,26 @@ h1 .text-skew:hover {
     transform: rotate(0deg);
 }
 
+/* Form */
+.form-group {
+    padding-inline: 5em;
+    justify-content: center;
+    font-family: "sf pro display";
+}
+
+.form-input {
+    border: 2px solid rgb(108, 108, 108);
+    padding: 0.5em;
+    width: 50%;
+    margin-right: 10px;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+.form-input:focus{
+    outline: none;
+}
+
 
 /* Lazarpay */
 .lazarpay__icon {
@@ -162,6 +182,18 @@ h1 .text-skew:hover {
         padding: 0.5em;
         margin-bottom: 1em;
         border: 1px solid rgb(229, 229, 229);
+    }
+
+    .form-group{
+        padding-top: 1em;
+        padding-inline: 0.5em;
+        flex-direction: column;
+    }
+
+    .form-input {
+        width: 95%;
+        margin-block: 0.5em;
+        margin-right: unset;
     }
     
 }
