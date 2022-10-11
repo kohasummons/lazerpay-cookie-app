@@ -126,8 +126,8 @@ h1 .text-skew:hover {
 }
 
 
-/* Lazarpay */
-.lazarpay__icon {
+/* lazerpay */
+.lazerpay__icon {
     width: 20%;
     max-width: 100%;
 }
@@ -172,7 +172,7 @@ h1 .text-skew:hover {
         font-size: 3em;
     }
 
-    .lazarpay__icon {
+    .lazerpay__icon {
         width: 10%;
         max-width: 100%;
     }
