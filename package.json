@@ -1,0 +1,17 @@
+{
+  "name": "lazarpay-cookie-app",
+  "version": "1.0.0",
+  "description": "A demo to integrate lazarpay api with vanilla js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Lazarpay",
+    "devrel",
+    "payment",
+    "opensource"
+  ],
+  "author": "Joshua Omobola",
+  "license": "ISC"
+}

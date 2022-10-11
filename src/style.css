@@ -1,0 +1,167 @@
+/* Imports */
+
+
+/* Global */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    box-sizing: border-box;
+    font-family: "sf pro display";
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid {
+    --grid-gap: 0.25em
+    display: grid;
+    gap: var(--grid-gap);
+}
+
+.grid-cols-2 {
+    grid-column: 1fr 1fr;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+/* Layout */
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    padding-bottom: 64px;
+}
+
+.wrapper {
+    max-width: 900px;
+    padding-top: 0.5em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Button */
+.btn {
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 0.95em;
+    width: 100%;
+    font-weight: bold;
+    max-width: 100%;
+    margin-top: 1.5em;
+    padding-block: 0.95em;
+    padding-inline: 1.5em;
+    background-color: #1038d6;
+    cursor: pointer;
+}
+
+
+/* Typography */
+h1 {
+    font-size: 6em;
+    letter-spacing: -6px;
+    color: #1038d6;
+}
+
+.text-skew {
+    display: inline-block;
+    transform: rotate(12deg);
+
+}
+
+h1 .text-skew:hover {
+    transform: rotate(0deg);
+}
+
+
+/* Lazarpay */
+.lazarpay__icon {
+    width: 20%;
+    max-width: 100%;
+}
+
+.c-header {
+    display: flex;
+    align-items: center;
+}
+
+/* Cookie */
+.cookie__group {
+    margin-top: 1em;
+}
+
+.cookie__item {
+    max-width: calc( 33.333% - 1em);
+    padding: 0.5em;
+}
+
+.cookie__img {
+    
+}
+
+.cookie__name {
+    font-size: 1.5em;
+    line-height: 0.5em;
+    letter-spacing: -0.08em;
+}
+
+.cookie__price {
+    margin-left: auto;
+    
+}
+
+.cookie__details-header {
+    margin-top: .1em;
+}
+
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .lazarpay__icon {
+        width: 10%;
+        max-width: 100%;
+    }
+
+    .cookie__item {
+        max-width: 100%;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        border: 1px solid rgb(229, 229, 229);
+    }
+    
+}
