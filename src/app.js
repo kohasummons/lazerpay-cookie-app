@@ -14,7 +14,7 @@ function payWithLazarpay(name, price) {
         name: name,
         email: "",
         amount: price,
-        key: "pk_live_speggQJcM2FEZAdjkeuWvpqBfXUpUkjy50099CvrNRyow8hKv9",
+        key: "pk_live_zEqWsc6vq4a4AoOxMtEtNFlMSttUBWpeINOzw9icyV9r9VAjrm",
         currency: "USD",
         onClose: (data) => {
           console.log(data);
