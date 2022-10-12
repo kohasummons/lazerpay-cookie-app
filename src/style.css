@@ -85,6 +85,25 @@ img {
     padding-inline: 1.5em;
     background-color: #1038d6;
     cursor: pointer;
+    position: relative;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 10;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-50%);
+    background-color: #1038d6;
+    opacity: 0;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    opacity: 0.3;
+    filter: blur(50px);
 }
 
 
