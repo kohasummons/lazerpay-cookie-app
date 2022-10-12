@@ -1,4 +1,4 @@
-# lazarpay-cookie-app
+# lazerpay-cookie-app
 A Cookie Cart to demonstrate Pay with Crypto Checkout with Lazarpay
 
 ![image](https://user-images.githubusercontent.com/66284362/195204601-1246af88-6171-4c1a-9d16-e3f405886f8f.png)
